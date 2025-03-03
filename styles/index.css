@@ -1,0 +1,422 @@
+/* Barlow */
+@import url(../assets/fonts/Barlow/stylesheet.css);
+/* SFPro */
+@import url(../assets/fonts/SFPro/stylesheet.css);
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url(../assets/fonts/Inter/stylesheet.css);
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Inter */
+body {
+  background: rgb(24, 27, 34);
+}
+
+.wrapper {
+  max-width: 1320px;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header {
+  width: 100%;
+  padding: 28px 24px;
+  background: rgb(24, 27, 34);
+}
+
+.header-left {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-right {
+  display: flex;
+  gap: 32px;
+}
+
+.header-online {
+  width: 82px;
+  height: 36px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 11px;
+  padding: 4px 12px 4px 12px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, rgb(33, 36, 43), rgba(33, 36, 43, 0.54) 100%);
+  margin: 0px 24px;
+}
+
+.header-online-text-white {
+  color: rgb(255, 255, 255);
+  font-family: "Inter";
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.header-online-text-shadow {
+  color: rgb(79, 85, 98);
+  font-family: "Inter";
+  font-size: 9px;
+  font-weight: 500;
+  line-height: 12px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.header-link {
+  color: rgb(133, 136, 146);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+
+.header-right-socials {
+  display: flex;
+  gap: 20px;
+  margin-left: 28px;
+}
+
+.swiper-wrapper {
+  width: 100%;
+  transition: linear;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  max-width: 187px !important;
+  height: 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px 12px 10px 12px;
+  border-radius: 4px;
+  background: rgb(33, 36, 43);
+  transition: 0.3s;
+}
+
+.swiper-slide:hover {
+  background: rgb(55, 60, 71);
+}
+
+.swiper-slide:hover .swiper-text {
+  color: white;
+}
+
+.swiper-slide:hover .swiper-text-white {
+  color: white;
+}
+
+.swiper-text {
+  color: rgb(79, 85, 98);
+  font-family: "Inter";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: left;
+  transition: 0.3s;
+}
+
+.swiper-text-white {
+  color: rgb(133, 136, 146);
+  font-family: "Inter";
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: left;
+  transition: 0.3s;
+}
+
+.pay .wrapper {
+  flex-direction: column;
+  margin-top: 49px;
+  align-items: start;
+}
+
+.pay-left {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+
+.subheading {
+  height: 48px;
+  color: rgb(255, 255, 255);
+  font-family: "Inter";
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 0%;
+  margin-bottom: 100px;
+}
+
+.subheading-shadow {
+  color: rgb(79, 85, 98);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 12px;
+}
+
+.pay-input {
+  width: 100%;
+  max-width: 648px;
+  height: 64px;
+  padding: 20px;
+  margin: 12px 0px;
+  border-radius: 8px;
+  border: none;
+  background: rgb(33, 36, 43);
+  color: rgb(255, 255, 255);
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+}
+
+.subheading-popup-button {
+  color: rgb(255, 255, 255);
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.pay-btn {
+  color: rgb(255, 255, 255);
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  border-radius: 12px;
+  background: rgb(123, 88, 232);
+  border-radius: 12px;
+  background: rgb(123, 88, 232);
+  padding: 20px 32px 20px 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 40px;
+  transition: 0.5s;
+}
+
+.pay-btn:hover {
+  background-color: rgb(158, 127, 255);
+}
+
+.prices {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 24px;
+}
+
+.pay-all {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-left-text {
+  color: rgb(133, 136, 146);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.footer-left-text-shadow {
+  color: rgb(79, 85, 98);
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.footer {
+  margin-top: 103px;
+  border-top: 1px solid rgb(40, 43, 51);
+  height: 72px;
+  padding: 24px 300px 24px 300px;
+}
+
+.footer-left {
+  display: flex;
+  gap: 32px;
+}
+
+.footer-right {
+  display: flex;
+  gap: 32px;
+}/*# sourceMappingURL=index.css.map */

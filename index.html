@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Converter</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <div class="header-left">
+          <svg width="190.000000" height="32.000000">
+            <use xlink:href="./assets/icons/logo.svg#logo"></use>
+          </svg>
+          <div class="header-online">
+            <svg width="6.000000" height="6.000000">
+              <use
+                xlink:href="./assets/icons/green-point.svg#green-point"
+              ></use>
+            </svg>
+            <div class="header-online-column">
+              <p class="header-online-text-white">2 456</p>
+              <p class="header-online-text-shadow">ОНЛАЙН</p>
+            </div>
+          </div>
+        </div>
+        <div class="header-right">
+          <a href="#" class="header-link"> FAQs </a>
+          <a href="#" class="header-link"> Контакты </a>
+          <div class="header-right-socials">
+            <a href="#" class="socials-link">
+              <svg width="32.000000" height="32.000000">
+                <use
+                  xlink:href="./assets/icons/header-telegramm.svg#header-telegramm"
+                ></use>
+              </svg>
+            </a>
+            <a href="#" class="socials-link">
+              <svg width="32.000000" height="32.000000">
+                <use xlink:href="./assets/icons/header-vk.svg#header-vk"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <p class="swiper-text">Австралийский доллар</p>
+            <p class="swiper-text-white">54,8428 ₽</p>
+          </div>
+          <div class="swiper-slide">
+            <p class="swiper-text">Азербайджанский манат</p>
+            <p class="swiper-text-white">51,9158 ₽</p>
+          </div>
+          <div class="swiper-slide">
+            <p class="swiper-text">Армянских драмов</p>
+            <p class="swiper-text-white">22,4372 ₽</p>
+          </div>
+          <div class="swiper-slide">
+            <p class="swiper-text">Батов</p>
+            <p class="swiper-text-white">25,8719 ₽</p>
+          </div>
+          <div class="swiper-slide">
+            <p class="swiper-text">Австралийский доллар</p>
+            <p class="swiper-text-white">54,8428 ₽</p>
+          </div>
+          <div class="swiper-slide">
+            <p class="swiper-text">Азербайджанский манат</p>
+            <p class="swiper-text-white">51,9158 ₽</p>
+          </div>
+          <div class="swiper-slide">
+            <p class="swiper-text">Армянских драмов</p>
+            <p class="swiper-text-white">22,4372 ₽</p>
+          </div>
+          <div class="swiper-slide">
+            <p class="swiper-text">Батов</p>
+            <p class="swiper-text-white">25,8719 ₽</p>
+          </div>
+          <div class="swiper-slide">
+            <p class="swiper-text">Австралийский доллар</p>
+            <p class="swiper-text-white">54,8428 ₽</p>
+          </div>
+          <div class="swiper-slide">
+            <p class="swiper-text">Азербайджанский манат</p>
+            <p class="swiper-text-white">51,9158 ₽</p>
+          </div>
+          <div class="swiper-slide">
+            <p class="swiper-text">Армянских драмов</p>
+            <p class="swiper-text-white">22,4372 ₽</p>
+          </div>
+          <div class="swiper-slide">
+            <p class="swiper-text">Батов</p>
+            <p class="swiper-text-white">25,8719 ₽</p>
+          </div>
+        </div>
+      </section>
+      <section class="pay">
+         <div class="wrapper">
+          <h1 class="subheading">Конвертация валют онлайн</h1>
+<div class="pay-all">
+            <div class="pay-left">
+            <h2 class="subheading-shadow">У меня есть</h2>
+                        <input type="number" id="amount" class="pay-input" placeholder="Сумма" oninput="convertCurrency()" />
+                        <select id="fromCurrency" class="pay-input" onchange="convertCurrency()">
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="RUB">RUB</option>
+                        </select>
+          </div>
+          <div class="pay-right">
+            <h2 class="subheading-shadow">Хочу получить</h2>
+                        <input type="text" id="result" class="pay-input" placeholder="Результат" disabled />
+                        <select id="toCurrency" class="pay-input" onchange="convertCurrency()">
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="RUB">RUB</option>
+                        </select>
+        </div>
+</div>
+      </section>
+    </main>
+        <footer class="footer">
+        <div class="wrapper">
+            <div class="footer-left">
+                <a href="#" class="footer-left-text">
+                    Главная
+                </a>
+                <label for="toggle" class="header-link">
+                    Контакты
+                </label>
+                <a href="#" class="footer-left-text">
+                    Отзывы
+                </a>
+                <p id="weather" class="footer-left-text"></p>
+            </div>
+            <div class="footer-right">
+                <label for="toggle-politics" class="footer-left-text-shadow">
+                    Политика конфиденциальности
+                </label>
+                <label for="toggle-user" class="footer-left-text-shadow">
+                    Пользовательское соглашение
+                </label>
+            </div>
+        </div>
+    </footer>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="./converter.js"></script>
+    <!-- <script src="./weather.js"></script> -->
+  </body>
+</html>
